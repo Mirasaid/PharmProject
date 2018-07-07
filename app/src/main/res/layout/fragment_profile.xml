@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="15dp">
+
+    <ProgressBar
+        android:id="@+id/progressbar_profile"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:backgroundTint="#FFF"
+        android:indeterminate="true"
+        android:indeterminateTint="#1a09d6"
+        android:max="100"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar_profile"
+        android:gravity="end"
+        android:text="click to edit your information"
+        android:textSize="10dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_profile_pic"
+        style="@style/SelectableItemTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtt"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:background="@drawable/circle_shape"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="43dp"
+        app:cardElevation="4dp"
+        tools:ignore="RtlCompat">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_profile_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_shape"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="42dp"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="-1"
+                tools:ignore="HardcodedText,KeyboardInaccessibleWidget,RtlCompat" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="-1"
+                tools:ignore="RtlCompat"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/btn_edit_image"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignBottom="@+id/profile_pic"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_edit"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="edit"
+                android:textAlignment="center"
+                android:textColor="#000"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/card_view_profile_pic"
+        android:layout_alignStart="@id/card_view_profile_pic"
+        android:layout_below="@id/card_view_profile_pic"
+        android:padding="5dp"
+        android:text="click to change your photo."
+        android:textSize="10dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/card_view_profile_pic"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/card_view_profile_pic"
+        android:textColor="#000"
+        android:textSize="18dp"
+        tools:ignore="RtlCompat" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/txt_name"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@id/card_view_profile_pic"
+        android:background="#000"
+        tools:ignore="NotSibling,RtlCompat" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txt_name"
+        android:layout_below="@+id/txt_name"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/holo_blue_dark"
+        tools:ignore="RtlCompat" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/txt_email"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@id/card_view_profile_pic"
+        android:background="#000"
+        tools:ignore="NotSibling,RtlCompat" />
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txt_name"
+        android:layout_below="@+id/txt_email"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:hint="01-000000000"
+        android:textColor="#000"
+        tools:ignore="HardcodedText,RtlCompat" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/txt_phone"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@id/card_view_profile_pic"
+        android:background="#000"
+        tools:ignore="NotSibling,RtlCompat" />
+
+    <TextView
+        android:id="@+id/txt_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txt_name"
+        android:layout_below="@id/txt_phone"
+        android:layout_margin="5dp"
+        android:textColor="#000"
+        tools:ignore="RtlCompat" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="10dp"
+        android:background="#999"
+        tools:ignore="NotSibling" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view11"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_my_posts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/txt_no_posts_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="you have not posts yet."
+        android:textSize="18dp"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,SpUsage" />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "332974265270",
+    "firebase_url": "https://pharmproject-603dc.firebaseio.com",
+    "project_id": "pharmproject-603dc",
+    "storage_bucket": "pharmproject-603dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332974265270:android:cd22a46200f6a3d2",
+        "android_client_info": {
+          "package_name": "tasks.com.pharmproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332974265270-q5rkmbrbrk8722ds3d08nh3skv36oo06.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tasks.com.pharmproject",
+            "certificate_hash": "6a030abde5276a17f2c929cc8b16580ec618b23d"
+          }
+        },
+        {
+          "client_id": "332974265270-ide1sg1unn5gvsd189rkoqkuj765o25g.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "332974265270-ide1sg1unn5gvsd189rkoqkuj765o25g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE3-woNJKDW-nMIw4EIX2APLljT0iJdLk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332974265270-ide1sg1unn5gvsd189rkoqkuj765o25g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
